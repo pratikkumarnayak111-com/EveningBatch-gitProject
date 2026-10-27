@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Pratik Nayak, an NIT student learning Spring Framework and microservices.">
+  <title>About Pratik Nayak</title>
+  <style>
+    :root {
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #172033;
+      background: #f3f6fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 32px 16px;
+    }
+
+    main {
+      width: min(100%, 760px);
+      overflow: hidden;
+      background: #fff;
+      border: 1px solid #e3e8f0;
+      border-radius: 20px;
+      box-shadow: 0 18px 48px rgb(23 32 51 / 9%);
+    }
+
+    .hero {
+      padding: 52px 56px 44px;
+      color: #fff;
+      background: linear-gradient(130deg, #173b83, #315fe8);
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: #d3ddff;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.2rem, 7vw, 3.5rem);
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      margin: 16px 0 0;
+      color: #e6ebff;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .content {
+      padding: 38px 56px 48px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.35rem;
+    }
+
+    .about-text {
+      margin: 0;
+      color: #536078;
+      font-size: 1.02rem;
+      line-height: 1.75;
+    }
+
+    .focus {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 30px;
+    }
+
+    .focus article {
+      padding: 20px;
+      border: 1px solid #e3e8f0;
+      border-radius: 12px;
+      background: #f8faff;
+    }
+
+    .focus h3 {
+      margin: 0 0 8px;
+      color: #244db9;
+      font-size: 1rem;
+    }
+
+    .focus p {
+      margin: 0;
+      color: #647087;
+      font-size: 0.94rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 560px) {
+      .hero {
+        padding: 38px 26px 34px;
+      }
+
+      .content {
+        padding: 30px 26px 36px;
+      }
+
+      .focus {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <p class="eyebrow">Student profile</p>
+      <h1>Pratik Nayak</h1>
+      <p class="subtitle">NIT student learning modern Java backend development</p>
+    </header>
+
+    <section class="content" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <p class="about-text">
+        Pratik Nayak is an NIT student building a foundation in backend software
+        development. He is currently learning the Spring Framework and microservices,
+        exploring how Java applications are developed and how services can work
+        together in a larger system.
+      </p>
+
+      <div class="focus" aria-label="Current learning interests">
+        <article>
+          <h3>Spring Framework</h3>
+          <p>Learning the tools and concepts used to build Java backend applications.</p>
+        </article>
+        <article>
+          <h3>Microservices</h3>
+          <p>Exploring service-based architecture and how independent application components communicate.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
